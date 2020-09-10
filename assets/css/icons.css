@@ -1,0 +1,42 @@
+.emoji{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0px 3px;
+	box-sizing: border-box;
+	position: relative;
+	top: 3px;
+}
+.anxious{background-image:url(../images/icons/001-anxious.svg);}
+.crying{background-image:url(../images/icons/002-crying.svg);}
+.dizzy{background-image:url(../images/icons/003-dizzy.svg);}
+.expressionless{background-image:url(../images/icons/004-expressionless.svg);}
+.blow-kiss{background-image:url(../images/icons/005-blow-kiss.svg);}
+.full{background-image:url(../images/icons/006-full.svg);}
+.screaming{background-image:url(../images/icons/007-screaming.svg);}
+.vomiting{background-image:url(../images/icons/008-vomiting.svg);}
+.laughing{background-image:url(../images/icons/009-laughing.svg);}
+.rolling-eyes{background-image:url(../images/icons/010-rolling-eyes.svg);}
+.angry{background-image:url(../images/icons/011-angry.svg);}
+.laughing{background-image:url(../images/icons/012-laughing.svg);}
+.flushed{background-image:url(../images/icons/013-flushed.svg);}
+.grinning-1{background-image:url(../images/icons/014-grinning.svg);}
+.grinning-2{background-image:url(../images/icons/015-grinning.svg);}
+.grinning-3{background-image:url(../images/icons/016-grinning.svg);}
+.hug{background-image:url(../images/icons/017-hug.svg);}
+.crying{background-image:url(../images/icons/018-crying.svg);}
+.angry{background-image:url(../images/icons/019-angry.svg);}
+.sleeping{background-image:url(../images/icons/020-sleeping.svg);}
+.fall-in-love{background-image:url(../images/icons/021-fall-in-love.svg);}
+.smiling-face{background-image:url(../images/icons/022-smiling-face.svg);}
+.smirking{background-image:url(../images/icons/023-smirking.svg);}
+.tongue-out{background-image:url(../images/icons/024-tongue-out.svg);}
+.thinking{background-image:url(../images/icons/025-thinking.svg);}
+.tired{background-image:url(../images/icons/026-tired.svg);}
+.unamused{background-image:url(../images/icons/027-unamused.svg);}
+.winking-face-1{background-image:url(../images/icons/028-winking-face.svg);}
+.winking-face-2{background-image:url(../images/icons/029-winking-face.svg);}
+.zipped{background-image:url(../images/icons/030-zipped.svg);}

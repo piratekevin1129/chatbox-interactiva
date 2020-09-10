@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <!--Jquery-->
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>-->
+    
+    <!--FONT AWASOME-->
+    <!--<script src="https://kit.fontawesome.com/a6f44a68f2.js" crossorigin="anonymous"></script>-->
+
+    <!--Estilos propios-->
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/master.css" rel="stylesheet" type="text/css" />
+
+    <title>Chatbox</title>
+</head>
+<body>
+    <div id="container">
+        <div id="chatbox">
+            <div class="chatbox-header">
+                <h1>Riesgos del mal uso de las figuras de contratación Contrato Realidad</h1>
+            </div>
+            <div class="chatbox-banner"></div>
+            <div class="chatbox-body">
+                <div id="chatbox-wraper">
+                    <h2>Bienvenidos al Chat Virtual de CEO<br />Mantenernos conectados es la energía que nos mueve</h2>
+                    <br />
+                    <h6 id="fecha-actual">11/29/1993</h6>
+                    <div id="chatbox-messages">
+                        <!--<div class="chatbox-message-bot">
+                            <div class="msg-profile-picture"></div>
+                            <div class="msg-message">
+                                <p>¿Cuál es tu nombre? <span class="emoji smiling-face"></span></p>
+                            </div>
+                        </div>
+                        <div class="chatbox-message-user">
+                            <div class="msg-message">
+                                <p>Caitlyn</p>
+                            </div>
+                            <div class="msg-profile-picture"></div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+                <div id="chatbox-typing" class="chatbox-typing-off">
+                    <div>
+                        <div class="chatbox-typing-1"></div>
+                        <div class="chatbox-typing-2"></div>
+                        <div class="chatbox-typing-3"></div>
+                    </div>
+                    <p>Escribiendo</p>
+                </div>
+            </div>
+            <div class="chatbox-chat">
+                <div id="chatbox-emojis-col">
+                    <button id="chatbox-emojis-btn" onclick="clickEmojis()"></button>
+                    <div id="chatbox-emojis-content" class="chatbox-emojis-content-off">
+                        <!--emojis here-->
+                        <div id="chatbox-emojis-row">
+                        </div>
+                        <p id="chatbox-emojis-cc">
+                            Icons made by <a href="https://www.flaticon.com/authors/pixelmeetup" title="Pixelmeetup" target="_blank">Pixelmeetup</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank"> www.flaticon.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="chatbox-input-col">
+                    <input type="text" name="texto" id="chatbox-input" autocomplete="off" placeholder="Escribe un mensaje" onkeydown="handleInput(event,this)" />
+                </div>
+                <div id="chatbox-enviar-col">
+                    <button id="chatbox-enviar-btn" onclick="clickEnviar()"></button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="cargador" class="cargador-on">
+            <div class="cargador-img"></div>
+            <div id="cargador-txt">Cargando...</div>
+        </div>
+    </div>
+
+<script src="assets/js/icons.js"></script>
+<script src="assets/js/chatbox.js"></script>
+<script>
+
+var sonido_mp3 = null
+var sonido2_mp3 = null
+var intro_mp3 = null
+
+var animation_start = null
+window.onload = function(){
+    loadAudio({src:'assets/media/sonido.mp3',callBack:function(data){
+    sonido_mp3 = data
+    sonido_mp3.volume = 0.5
+    loadAudio({src:'assets/media/sonido2.mp3',callBack:function(data){
+    sonido2_mp3 = data
+    sonido2_mp3.volume = 0.5
+    loadAudio({src:'assets/media/9_riesgos_del_mal_uso.mp3',callBack:function(data){
+    intro_mp3 = data
+    
+        getE('cargador-txt').innerHTML = 'Haz clic para comenzar'
+        getE('cargador').onclick = function(){
+
+            getE('cargador').className = 'cargador-off'
+            setChatbox()
+        }
+        
+    }})
+    }})
+    }})
+}
+    
+</script>
+</body>
+</html>

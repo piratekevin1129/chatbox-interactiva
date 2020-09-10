@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "SOHO GOTHIC PRO LIGHT";
+    src: url("fonts/SOHO GOTHIC PRO LIGHT.TTF") format('truetype');
+}
+@font-face {
+    font-family: "SOHOGOTHICPRO-BOLD";
+    src: url("fonts/SOHOGOTHICPRO-BOLD.TTF") format('truetype');
+}
+@font-face {
+    font-family: "SOHOGOTHICPRO-MEDIUM";
+    src: url("fonts/SOHOGOTHICPRO-MEDIUM.TTF") format('truetype');
+}
