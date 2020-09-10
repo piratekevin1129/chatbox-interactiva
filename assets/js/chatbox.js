@@ -41,8 +41,6 @@ function setChatbox(){
 		pregunta_nombre = true
 		unblockChat()
 		setMessage({msg:'<p>¿Cuál es tu nombre? <span class="emoji smiling-face"></span></p>',extra:'',profile:'bot'})
-
-		getE('chatbox-input').focus()
 	},1000)
 }
 
@@ -75,6 +73,8 @@ function setMessage(data){
 		var chat = getE('chatbox-wraper')
    		chat.scrollTop = chat.scrollHeight - chat.clientHeight;
 		unblockChat()
+
+		getE('chatbox-input').focus()
 
 		if(data.callBack!=null&&data.callBack!=undefined){
 			data.callBack()
